@@ -73,7 +73,7 @@
     </div>
     <main id="main">
         <div style="display: flex;justify-content: center;">
-            <div class="container">
+            <div class="container" style="display: flex;flex-direction: row;">
                 <div style="width: 75%;margin-top: 50px;">
                     <div style="width: 100%;display: flex;border-bottom: 1px solid #ddd;">
                         <div class="back" style="width: 45%;">
@@ -115,37 +115,37 @@
                             <div>
                                 <ul style="display: flex;justify-content: space-between;padding: 0;">
                                     <li style="width: 60px; display: block;border: 1px solid #ddd;">
-                                        <img itemprop="image"
+                                        <img itemprop="image" style="max-width: 100%;"
                                             src="https://bestmart.vn/admin//uploads/2017/04/12/28452e746bebe44e85b8e006e3ed5f42_may-cha-got-chan-shinon-han-quoc.jpg"
                                             alt="Máy chà gót chân Shinon Hàn Quốc"
                                             title="Máy chà gót chân Shinon Hàn Quốc" draggable="false">
                                     </li>
                                     <li style="width: 60px; display: block;border: 1px solid #ddd;">
-                                        <img itemprop="image"
+                                        <img itemprop="image" style="max-width: 100%;"
                                             src="https://bestmart.vn/admin/uploads/2017/04/12/picture/7bfca26d4a7d863ddbe6e1e3bc40d138_may-cha-got-chan-shinon-6.jpg"
                                             alt="Máy chà gót chân Shinon Hàn Quốc"
                                             title="Máy chà gót chân Shinon Hàn Quốc" draggable="false">
                                     </li>
                                     <li style="width: 60px; display: block;border: 1px solid #ddd;">
-                                        <img itemprop="image"
+                                        <img itemprop="image" style="max-width: 100%;"
                                             src="https://bestmart.vn/admin/uploads/2017/04/12/picture/01024acfe4ace9bf8945167b2ae045cf_may-cha-got-chan-shinon-4.jpg"
                                             alt="Máy chà gót chân Shinon Hàn Quốc"
                                             title="Máy chà gót chân Shinon Hàn Quốc" draggable="false">
                                     </li>
                                     <li style="width: 60px; display: block;border: 1px solid #ddd;">
-                                        <img itemprop="image"
+                                        <img itemprop="image" style="max-width: 100%;"
                                             src="https://bestmart.vn/admin/uploads/2017/04/12/picture/2cbe73ab06915a71a8878b4c4c5cf7ea_may-cha-got-chan-shinon-3.jpg"
                                             alt="Máy chà gót chân Shinon Hàn Quốc"
                                             title="Máy chà gót chân Shinon Hàn Quốc" draggable="false">
                                     </li>
                                     <li style="width: 60px; display: block;border: 1px solid #ddd;">
-                                        <img itemprop="image"
+                                        <img itemprop="image" style="max-width: 100%;"
                                             src="https://bestmart.vn/admin/uploads/2017/04/12/picture/e36427b4f6113b9d5ad5f89bab3eacc8_may-mai-got-chan-shinon.jpg"
                                             alt="Máy chà gót chân Shinon Hàn Quốc"
                                             title="Máy chà gót chân Shinon Hàn Quốc" draggable="false">
                                     </li>
                                     <li style="width: 60px; display: block;border: 1px solid #ddd;">
-                                        <img itemprop="image"
+                                        <img itemprop="image" style="max-width: 100%;"
                                             src="https://bestmart.vn/admin/uploads/2017/04/12/picture/260e1f3ead16b0e4c573f054400fdabb_may-cha-got-chan-shinon-3.jpg"
                                             alt="Máy chà gót chân Shinon Hàn Quốc"
                                             title="Máy chà gót chân Shinon Hàn Quốc" draggable="false">
@@ -350,6 +350,42 @@
                         </div>
                     </div>
                 </div>
+                <div style="width: 100%;margin-left: 10px;">
+                    <div class="hotline" style="top: 0px;">
+                        <div class="info-item">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <div class="title">096.316.9900</div>
+                            <div class="title">098.531.9900</div>
+                            <div class="text">TRỰC HOTLINE 6H-24H</div>
+                        </div>
+                        <div style="border-top: 5px solid #ed1c24;">
+                            <h3>Đặt mua nhanh</h3>
+                            <form method="post">
+                                <table style="border-spacing: 0;">
+                                    <tr style="background: #f9f9f9;">
+                                        <th>SP</th>
+                                        <th>SL</th>
+                                        <th>Đơn giá</th>
+                                        <th>Thành tiền</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Máy đánh trứng cầm tay</td>
+                                        <td><input id="input-num" type="number" name="quantity" min="1" value="1" style="width: 30px;text-align: center;"></td>
+                                        <td>175,000</td>
+                                        <td><span class="total-price">175,000</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Tổng tiền</td>
+                                        <td colspan="3" class="total-price">175,000</td>
+                                    </tr>
+                                </table>
+                            </form>
+                            <div style="text-align: center;margin-top: 10px;">
+                                <a class="btn-buy" style="font-size: 13px;background: #71be0f !important;padding: 1em 1.2em;line-height: 2.4em;color: white;cursor: pointer;">ĐẶT HÀNG</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -366,6 +402,20 @@
             autoplayTimeout: 1000,
             autoplayHoverPause: true
         });
+        $(window).scroll(function(){
+            let currentScrollPosition=$(window).scrollTop();
+            if(currentScrollPosition<=180)
+                currentScrollPosition=0
+            else currentScrollPosition-=160
+            $(".hotline").css("top",currentScrollPosition+"px")
+        })
+        const input=document.getElementById("input-num")
+        input.addEventListener('input',updateValue)
+        function updateValue(e){
+            var sum=175*e.target.value
+            $(".total-price").text(sum+",000")
+            document.getElementById("num-change").value = e.target.value
+        }
     })
 </script>
 <script>
@@ -380,14 +430,23 @@
             let num = parseInt(document.getElementById("num-change").value)
             if (num > 1) {
                 document.getElementById("num-change").value = num - 1
+                document.getElementById("input-num").value=num - 1
+                $(".total-price").text((num-1)*175+",000")
             }
         })
         $(".btn-up").click(function () {
             let num = parseInt(document.getElementById("num-change").value)
             document.getElementById("num-change").value = num + 1
+            document.getElementById("input-num").value=num + 1
+            $(".total-price").text((num+1)*175+",000")
 
         })
         $(".btn-add-cart").click(function () {
+            swal("Chúc mùng", "Bạn đã mua hàng thành công", "success", {
+                button: "Quay lại",
+            });
+        })
+        $(".btn-buy").click(function () {
             swal("Chúc mùng", "Bạn đã mua hàng thành công", "success", {
                 button: "Quay lại",
             });

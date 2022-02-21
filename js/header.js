@@ -51,7 +51,7 @@ $template.innerHTML=`
                                 <div class="header-button" style="background-color: #C9141B;border: none;">
                                     <a href="index.html" title="Giỏ hàng"
                                         class="header-cart-link icon button circle is-outline is-small" style="color: white;">
-                                        <span style="margin-left: 5px;"> Giỏ hàng <i class="fa fa-shopping-bag" style="margin-left: 10px;" aria-hidden="true"></i></span>
+                                        <span style="margin-left: 3px;"> Giỏ hàng <i class="fa fa-shopping-bag" style="margin-left: 10px;" aria-hidden="true"></i></span>
                                     </a>
                                 </div>
                             </li>
